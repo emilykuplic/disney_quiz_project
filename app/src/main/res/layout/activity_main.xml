@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.disneyquiz.MainActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="24dp"
+            android:text="1. What Disney film is the following image from?"
+            android:textColor="#A702BF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/oliver_and_company" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_aristocats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Aristocats" />
+
+            <RadioButton
+                android:id="@+id/radio_olive_and_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oliver and Company" />
+
+            <RadioButton
+                android:id="@+id/radio_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="101 Dalmations" />
+
+            <RadioButton
+                android:id="@+id/radio_rescuers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Rescuers" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="2. The Little Mermaid was released in what year?"
+            android:textColor="#A702BF"
+            android:textSize="16sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_1984"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1984" />
+
+            <RadioButton
+                android:id="@+id/radio_1986"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1986" />
+
+            <RadioButton
+                android:id="@+id/radio_1989"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1989" />
+
+            <RadioButton
+                android:id="@+id/radio_1990"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1990" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="3. What is the name of this snowman that loves hugs?"
+            android:textColor="#A702BF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/olaf" />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:hint="Type the character's name here"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="4. Check the names of the characters in the image below?"
+            android:textColor="#A702BF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bambi_thumper_flower"></ImageView>
+
+        <CheckBox
+            android:id="@+id/bambi_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="24dp"
+            android:scaleType="centerCrop"
+            android:text="Bambi"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/hops_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Hops"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/flower_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Flower"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/petal_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Petal"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/thumper_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Thumper"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/submit_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="submitQuiz"
+            android:text="Submit to see results" />
+
+        <TextView
+            android:id="@+id/final_score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</ScrollView>
